@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family:sans-serif;
+
+}
+
+.resume{
+    width: 8.56in;
+    height: 11.8in;
+    padding: 0.5in;
+    border: 1px solid black;
+    margin: 1in auto 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header{
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.headinfo {
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+hr{
+    border: 1px solid black;
+    margin: 0.03in 0;
+}
+
+.title{
+    font-size: 14pt;
+    font-weight: bold;
+    
+}
+
+.subtitle{
+    font-size: 12pt;
+    font-weight: bold;
+    float: left;
+}
+
+.year{
+    font-size: 10pt;
+    font-weight: bold;
+    float: right;
+}
+
+#gap{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    padding-left:40px
+}
+
+.seperator{
+    color: black;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+a{
+    color: violet;
+}
+
+#color-changer {
+    background-color: #4CAF50; /* Green */
+  
+    
+  border: none;
+    color: white;
+    padding: 15px
+   
+  32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 0;
+    cursor: pointer;
+    border-radius: 5px; /* Optional for rounded edges */
+  }
+  
+  #color-changer:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* Add a shadow on hover */
+  }

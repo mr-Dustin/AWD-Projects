@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-image: url(https://th.bing.com/th/id/OIP.pQ7zMKhOpgoGk5h5rM-kcgHaEK?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.letters{
+    perspective: 100px;
+    font-family: cursive;
+    color: rgb(1, 85, 13);
+    .letter{
+        overflow: hidden;
+        cursor: pointer;
+        display:inline-block;
+        user-select: none;
+        line-height: 0.8;
+        font-size: 5rem;
+        &.active{
+            animation: jump 2s ease-in-out;
+            transform-origin: bottom left;
+        }
+
+    }
+}
+
+@keyframes jump{
+    0%{
+        transform: translate(0,0) rotate(180deg);
+    }
+    25%{
+        transform: scale(2) translate(0,-150px);
+    }
+    75%{
+        transform: scale(1.1,1.1) translate(0,200px);
+    }
+    100%{
+        transform: translate(0,0) rotate(360deg);
+    }
+}
