@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.day-buttons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 160px;
+    left: 600px;
+    
+}
+
+.day-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+
+.monday{ /* Monday */
+  background-color: #aa00ff;
+}
+
+.tuesday{ /* Tuesday */
+  background-color: #edb4b4;
+}
+
+.wednesday { /* Wednesday */
+  background-color: #001aff;
+  color: white;
+}
+
+.thursday { /* Thursday */
+  background-color: #1aff00;
+}
+
+.friday { /* Friday */
+  background-color: #fbff03;
+}
+
+.saturday { /* Saturday */
+  background-color: #ff8800;
+}
+
+.sunday { /* Sunday */
+  background-color: #ff0000;
+}
+
+
+.day-buttons button:active,
+.day-buttons button:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+.animation-box-before{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 10px solid white;
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    animation: none;
+    opacity: 1;
+}
+
+.animation-box-after{
+    width: 500px;
+    height: 500px;
+    background-color: #0011ff5c;
+    border: 10px solid #0011ff;
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    animation: none;
+    opacity: 0;
+}
+
+
+@keyframes drop {
+    0% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+
+    100% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+}
+
+
+@keyframes fadeOut{
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes fadeIn{
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
